@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div Id='max'></div>
+    <p></p>
+    <div Id='min'></div>
+    <script type='text/javascript'>
+        document.getElementsById('max').innerHTML=`Max:${Number.MAX_VALUE}`;
+        document.getElementsById('min').innerHTML=`Min:${Number.MIN_VALUE}`;
+        const x=100;
+        let s1='Hello';
+        let result =x/s1;
+        document.writeln(`<p>result ${result}`);
+            document.writeln(`<p>isNaN(x/s1) ${isNa(x/s1)}</P>`);
+
+                const y=0;
+                const z=x/y;
+                document.writeln(`<p>z=${z}</p>`);
+
+                s1=null;
+                document.writeln(`<p>s1=${s1}</p>`);
+
+                function checkNull(saythis){
+            if(saythis === undefined){
+            saythis = 'value not defined';
+            }
+            else if(saythis === null){
+                saythis = 'This value is null';
+            }
+            console.log(saythis);
+        }
+        checkNull(s1);
+
+
+
+
+    </script>
+</body>
+</html>
